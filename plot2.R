@@ -20,7 +20,7 @@ data <- cbind(dateTimeV, data)
 ## Open PNG device; create "plot2.png" in my working directory.
 png(filename = "plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
 
-## Plot and annotate the histogram.
+## Plot and annotate the line graph.
 with(data, plot(dateTimeV, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
 
 ## Close the PNG file device.
